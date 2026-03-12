@@ -9,3 +9,9 @@ La aplicación permite:
 - Generar un gráfico de dispersión entre el odómetro y el precio.
 
 El proyecto también incluye un análisis exploratorio de datos realizado en un Jupyter Notebook llamado `EDA.ipynb`.
+
+## Aplicación desplegada
+
+Puedes acceder a la aplicación web aquí:
+
+https://sprint-7-wbd7.onrender.com
