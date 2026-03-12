@@ -23,5 +23,4 @@ if scatter_button:
     st.write("Gráfico de dispersión: odómetro vs precio")
     fig = px.scatter(df, x="odometer", y="price")
     st.plotly_chart(fig)
-    fig = px.histogram(df, x="price")
-    st.plotly_chart(fig)
+    
