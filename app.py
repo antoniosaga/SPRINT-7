@@ -10,6 +10,18 @@ st.write(df.head())
 
 st.header("Histograma del precio")
 
-fig = px.histogram(df, x="price")
+hist_button = st.button("Construir histograma")
 
-st.plotly_chart(fig)
+if hist_button:
+    st.write("Histograma del precio")
+    fig = px.histogram(df, x="price")
+    st.plotly_chart(fig)
+
+scatter_button = st.button("Construir gráfico de dispersión")
+
+if scatter_button:
+    st.write("Gráfico de dispersión: odómetro vs precio")
+    fig = px.scatter(df, x="odometer", y="price")
+    st.plotly_chart(fig)
+    fig = px.histogram(df, x="price")
+    st.plotly_chart(fig)
